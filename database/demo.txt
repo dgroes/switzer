@@ -1,0 +1,106 @@
+## Usuarios
+- id
+- run
+- nombres
+- apellidos
+
+# Personal(conserje, mayordomo, auxiliar)
+- id
+- id_usuario
+- id_personal_tipo
+- email
+
+# Personal Tipo
+- id
+- detalle
+
+# Vehiculo
+- patente
+- marca
+- modelo *
+- color *
+
+# Bodega
+- id
+- número_bodega
+- id_departamento
+- piso (-1 o -2)
+
+# Residente
+- id
+- id_persona
+- depto
+-
+
+# Departamento
+- número depto
+- id_torre
+- id_residente
+- id_propietario
+
+# Trabajadores de Residentes (niñera, limpiadora, jardinero, etc)
+- id
+- id_persona
+- Detalle
+
+# Registro de visita (en vehiculo)
+- id
+- id_persona
+- id_vehiculo
+- Parentesco
+- hora_llegad
+- hora_salida
+
+# Registro de veisita (a pie)
+- id
+- id_persona
+- parentesco
+- hora_llegada
+- hora_salida
+
+# Quejas y anotaciones (libro de quejas para los residentes)
+- id
+- dia y hora
+- id_residente
+- detalle
+
+# registro de encargos (pedidos de comida, encomiendas, encargo de llaves, etc)
+- id
+- detalle
+- tipo de retiro (interno o externo)
+- id_depto
+- dejado para (nombre de persona, esto podría estar ya en el detalle)
+
+# bitacora general
+- id
+- hora
+- tipo de nota
+- detalle
+
+# nota_tipo
+- id
+- detalle (Nota Importante, Ronda, etc)
+
+
+## ESto ya puede que sea pero con Filament
+# Turnos
+- id
+- hora_ingreso
+- hora_salido
+- tiempo de colación
+- nombre_turno
+
+# Calendario
+- id
+- id_turno
+- id_personal
+- día
+
+# Pagos
+- id
+- id_pesronal
+- número de transaccón de pago (cheque, transferencía de dinero, etc)
+- enlace de documento de pago (foto, pdf, etc)
+- fecha de pago
+
+
